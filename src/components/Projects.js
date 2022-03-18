@@ -17,7 +17,7 @@ export default function Projects() {
             fuga dolore.
           </p>
         </div>
-        <div class='p-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
+        <div class='p-0 md:p-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
           {projects.map((project) => (
             <div className='rounded-2xl overflow-hidden shadow-lg bg-gray-800 p-0'>
               <img
