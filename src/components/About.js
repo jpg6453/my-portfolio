@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function About() {
+export default function About({ scrollTo }) {
   return (
     <section id='about'>
       <div className='container md:mx-auto px-4 flex py-12 md:p-6 lg:px-24 lg:py-10 xl:px-40 xl:py-20 lg:flex-row flex-col items-center md:mt-20'>
@@ -14,18 +14,23 @@ export default function About() {
             Passionate about tech and the increasing role it plays in our lives.
           </p>
           <div className='flex justify-center'>
-            <a
-              href='#contact'
-              className='inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg'
+            <div
+              className='inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg scroll-beahvior:smooth'
+              onClick={() => {
+                scrollTo('#contact');
+              }}
             >
               Contact Me
-            </a>
-            <a
+            </div>
+            <div
               href='#projects'
               className='ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg'
+              onClick={() => {
+                scrollTo('#projects');
+              }}
             >
               My Projects
-            </a>
+            </div>
           </div>
         </div>
         <div className='lg:max-w-lg md:w-full px-4 md:px-20 md:py-20 lg:p-0'>
